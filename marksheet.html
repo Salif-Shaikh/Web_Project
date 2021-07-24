@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <script src="./valuestore.js"></script>
+    <link rel="stylesheet" href="Mtouch.css">
+</head>
+
+<body>
+    <div>
+        <h1 align="center"> Marksheet</h1>
+
+    </div>
+
+    <div>
+
+        <table align="center" class="table">
+            <thead>
+                <tr>
+                    <td id = "t3"> SUBJECTS </td>
+                    <td id = "t3"> THEORY </td>
+                    <td id = "t3"> PRACTICAL </td>
+                    <td id = "t3"> PROJECT </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Computer science</td>
+                    <td><input type="Number" id="01" id ="t2" maxlength="40"></td>
+                    <td><input type="Number" id="02" id ="t2" maxlength="40"></td>
+                    <td><input type="Number" id="03" id ="t2" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td>Physics</td>
+                    <td><input type="Number" id="04" id ="t2" maxlength="40"></td>
+                    <td><input type="Number" id="05" id ="t2" maxlength="40"></td>
+                    <td><input type="Number" id="06" id ="t2" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td>Chemistry</td>
+                    <td><input type="Number" id="07" id ="t2" maxlength="40"></td>
+                    <td><input type="Number" id="08" id ="t2" maxlength="40"></td>
+                    <td><input type="Number" id="09" id ="t2" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td>Maths</td>
+                    <td><input type="Number" id="10" id ="t2" maxlength="40"></td>
+                    <td><input type="Number" id="11" id ="t2" maxlength="40"></td>
+                    <td><input type="Number" id="12" id ="t2" maxlength="10"></td>
+                </tr>
+            </tbody>
+    
+            <tfoot>
+                <tr>
+                    <td colspan="2" id="t2">
+                        <center> Total: <span id="total"></span> </center>
+                    </td>
+                    <td colspan="2">
+                        <center> Percentage: <span id="percentage"></span> </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" id ="t2">
+                        <center> Remark: <span id="remark"></span> </center>
+                    </td>
+                </tr>
+    
+            </tfoot>
+            
+        </table>
+        <br>
+        <br>
+        <center>
+            <button onclick='getid()' class="submit" id="t1">submit</button>
+            &nbsp;&nbsp;
+            <button value="Reset" class="rest" id="t1" > Reset </button>
+            
+    
+    
+        </center>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1.1" d="M0,64L80,101.3C160,139,320,213,480,229.3C640,245,800,203,960,186.7C1120,171,1280,181,1360,186.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    </div>
+
+</body>
+
+</html>
